@@ -1,3 +1,5 @@
+# Creating new note
+
 ```mermaid
 sequenceDiagram
     participant browser
@@ -7,7 +9,7 @@ sequenceDiagram
     Note right of browser: The browser sent form data to the server
 
     activate server
-    server-->>browser: redirect to POST(302 code) in headers (Location: /exampleapp/notes)
+    server-->>browser: POST(302 code redirect to) in headers  (Location: /exampleapp/notes)
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
